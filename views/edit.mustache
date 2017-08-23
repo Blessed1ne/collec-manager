@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>EDIT ALBUM</h1>
+
+    <div class="">
+      <label for="name">Album Name</label>
+      <input type="text" name="album" value="{{album.album}}">{{#errors.album}}Album name is required{{/errors.album}}
+    </div>
+
+    <div class="">
+      <label for="artist">Artist</label>
+      <input type="text" name="artist" value="{{album.artist}}">{{#errors.artist}}Artist name is required{{/errors.artist}}
+    </div>
+
+    <div class="">
+      <label for="price">Price</label>
+      <input type="text" name="price" value="{{album.price}}">{{#errors.price}}Price is required{{/errors.price}}
+    </div>
+
+    <div class="">
+      <label for="genere">genre</label>
+      <input type="text" name="genre" value="{{album.genre}}">{{#errors.genre}}Genre is required{{/errors.genre}}
+    </div>
+
+      <button type="submit" name="button">Update Album</button>
+    </form>
+
+
+  </body>
+</html>

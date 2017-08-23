@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>HELLO</h1>
+
+    <a href="/albums/new">New Album</a>
+
+
+    {{#albums}}
+    <li><a href="/albums/{{_id}}">{{album}}</a></li>
+    {{/albums}}
+
+  </body>
+</html>
